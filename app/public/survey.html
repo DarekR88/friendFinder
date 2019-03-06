@@ -12,88 +12,353 @@
 
 <body>
     <p class="sTitle">Survey</p>
-    <p class="question">1. What is your favorite ice cream flavor?</p>
-    <form name="qOne">
-        Vanilla<input type="radio" name="answer">
-        Chocolate<input type="radio" name="answer">
-        Cookies and Cream<input type="radio" name="answer">
-        Cookie Dough<input type="radio" name="answer">
-        Strawberry<input type="radio" name="answer">
-    </form>
-    <p class="question">2. What are your favorite activities?</p>
-    <form name="qTwo">
-        Watching movies<input type="radio" name="answer">
-        Playing sports<input type="radio" name="answer">
-        Going to the beach<input type="radio" name="answer">
-        Hanging out with friends<input type="radio" name="answer">
-        Playing board games or video games<input type="radio" name="answer">
-    </form>
-    <p class="question">3. What is your favorite kind of movie?</p>
-    <form name="qThree">
-        Action<input type="radio" name="answer">
-        Comedy<input type="radio" name="answer">
-        Horror/Thriller<input type="radio" name="answer">
-        Sciience Fiction<input type="radio" name="answer">
-        Drama<input type="radio" name="answer">
-    </form>
-    <p class="question">4. Which chore do you find most enjoyable?</p>
-    <form name="qFour">
-        Doing the dishes<input type="radio" name="answer">
-        Laundry<input type="radio" name="answer">
-        Cleaning the floors/Vacuuming<input type="radio" name="answer">
-        Yard work<input type="radio" name="answer">
-        Organization<input type="radio" name="answer">
-    </form>
-    <p class="question">5. Which word would you use to describe yourself?</p>
-    <form name="qFive">
-        Optimistic<input type="radio" name="answer">
+    <form name="questions">
+        <label for="name">What is your name?</label>
+        <input type="text" id="name"><br>
+        <label for="quote">Add a quote that best describes you?</label>
+        <input type="text" id="quote" size="35"><br>
+        <label for="url">Add the url of a self portrait</label>
+        <input type="text" id="url" size="25"><br>
+        <p class="question">1. What is your favorite ice cream flavor?</p>
+        <p class="checkVal" id="checkOne"></p>
+        Vanilla<input type="radio" name="answer1">
+        Chocolate<input type="radio" name="answer1">
+        Cookies and Cream<input type="radio" name="answer1">
+        Cookie Dough<input type="radio" name="answer1">
+        Strawberry<input type="radio" name="answer1">
+        <p class="question">2. What are your favorite activities?</p>
+        <p class="checkVal" id="checkTwo"></p>
+        Watching movies<input type="radio" name="answer2">
+        Playing sports<input type="radio" name="answer2">
+        Going to the beach<input type="radio" name="answer2">
+        Hanging out with friends<input type="radio" name="answer2">
+        Playing board games or video games<input type="radio" name="answer2">
+        <p class="question">3. What is your favorite kind of movie?</p>
+        <p class="checkVal" id="checkThree"></p>
+        Action<input type="radio" name="answer3">
+        Comedy<input type="radio" name="answer3">
+        Horror/Thriller<input type="radio" name="answer3">
+        Science Fiction<input type="radio" name="answer3">
+        Drama<input type="radio" name="answer3">
+        <p class="question">4. What is your favorite holiday?</p>
+        <p class="checkVal" id="checkFour"></p>
+        Christmas<input type="radio" name="answer4">
+        Thanksgiving<input type="radio" name="answer4">
+        Valentine's Day<input type="radio" name="answer4">
+        Halloween<input type="radio" name="answer4">
+        The 4th of July<input type="radio" name="answer4">
+        <p class="question">5. Which word would you use to describe yourself?</p>
+        <p class="checkVal" id="checkFive"></p>
+        Optimistic<input type="radio" name="answer5">
         Pessimistic<input type="radio" name="answer">
-        Outgoing<input type="radio" name="answer">
-        Introverted<input type="radio" name="answer">
-        Bombastic<input type="radio" name="answer">
+        Outgoing<input type="radio" name="answer5">
+        Introverted<input type="radio" name="answer5">
+        Bombastic<input type="radio" name="answer5">
+        <p class="question">6. What is your favorite kind of food?</p>
+        <p class="checkVal" id="checkSix"></p>
+        Burgers<input type="radio" name="answer6">
+        Fried Chicken<input type="radio" name="answer6">
+        Mexican<input type="radio" name="answer6">
+        Asian<input type="radio" name="answer6">
+        Italian<input type="radio" name="answer6">
+        <p class="question">7. What is your favorite thing to do on a friday night?</p>
+        <p class="checkVal" id="checkSeven"></p>
+        Go to the bar<input type="radio" name="answer7">
+        Go dancing<input type="radio" name="answer7">
+        Go to the movies<input type="radio" name="answer7">
+        Hang out with friends<input type="radio" name="answer7">
+        Play video games<input type="radio" name="answer7">
+        <p class="question">8. What kind of pet would you pick?</p>
+        <p class="checkVal" id="checkEight"></p>
+        Dog<input type="radio" name="answer8">
+        Cat<input type="radio" name="answer8">
+        Bird<input type="radio" name="answer8">
+        Fish<input type="radio" name="answer8">
+        Rock<input type="radio" name="answer8">
+        <p class="question">9. What is your spirit animal?</p>
+        <p class="checkVal" id="checkNine"></p>
+        Dolphin<input type="radio" name="answer9">
+        Lion<input type="radio" name="answer9">
+        Monkey<input type="radio" name="answer9">
+        Eagle<input type="radio" name="answer9">
+        Mouse<input type="radio" name="answer9">
+        <p class="question">10. What would be your adult beverage of choice?</p>
+        <p class="checkVal" id="checkTen"></p>
+        Beer<input type="radio" name="answer10">
+        Mixed drink<input type="radio" name="answer10">
+        Wine<input type="radio" name="answer10">
+        Shots<input type="radio" name="answer10">
+        Champagne<input type="radio" name="answer10"><br>
+        <button tpe="submit" class="subBtn" id="surveySub">Submit Answers</button>
     </form>
-    <p class="question">6. What is your favorite kind of food?</p>
-    <form name="qSix">
-        Burgers<input type="radio" name="answer">
-        Fried Chicken<input type="radio" name="answer">
-        Mexican<input type="radio" name="answer">
-        Asian<input type="radio" name="answer">
-        Italian<input type="radio" name="answer">
-    </form>
-    <p class="question">7. What is your favorite thing to do on a friday night?</p>
-    <form name="qSeven">
-        Go to the bar<input type="radio" name="answer">
-        Go dancing<input type="radio" name="answer">
-        Go to the movies<input type="radio" name="answer">
-        Hang out with friends<input type="radio" name="answer">
-        Play video games<input type="radio" name="answer">
-    </form>
-    <p class="question">8. What kind of pet would you pick?</p>
-    <form name="qEight">
-        Dog<input type="radio" name="answer">
-        Cat<input type="radio" name="answer">
-        Bird<input type="radio" name="answer">
-        Fish<input type="radio" name="answer">
-        Rock<input type="radio" name="answer">
-    </form>
-    <p class="question">9. What is your spirit animal?</p>
-    <form name="qNine">
-        Dolphin<input type="radio" name="answer">
-        Lion<input type="radio" name="answer">
-        Monkey<input type="radio" name="answer">
-        Eagle<input type="radio" name="answer">
-        Mouse<input type="radio" name="answer">
-    </form>
-    <p class="question">10. What would be your adult beverage of choice?</p>
-    <form name="qTen">
-        Beer<input type="radio" name="answer">
-        Mixed drink<input type="radio" name="answer">
-        Wine<input type="radio" name="answer">
-        Shots<input type="radio" name="answer">
-        Champagne<input type="radio" name="answer">
-    </form>
-    <button tpe="submit" class="surveySub">Submit Answers</button>
+    <script type="text/javascript">
+        var profile = {}
+        // variables for the radio manipulation
+        var questionOne = document.getElementsByName("answer1")
+        var questionTwo = document.getElementsByName("answer2")
+        var questionThree = document.getElementsByName("answer3")
+        var questionFour = document.getElementsByName("answer4")
+        var questionFive = document.getElementsByName("answer5")
+        var questionSix = document.getElementsByName("answer6")
+        var questionSeven = document.getElementsByName("answer7")
+        var questionEight = document.getElementsByName("answer8")
+        var questionNine = document.getElementsByName("answer9")
+        var questionTen = document.getElementsByName("answer10")
+        var answerOne;
+        var answerTwo;
+        var answerThree;
+        var answerFour;
+        var answerFive;
+        var answerSix;
+        var answerSeven;
+        var answerEight;
+        var answerNine;
+        var answerTen;
+        var isCheckedOne = false;
+        var isCheckedTwo = false;
+        var isCheckedThree = false;
+        var isCheckedFour = false;
+        var isCheckedFive = false;
+        var isCheckedSix = false;
+        var isCheckedSeven = false;
+        var isCheckedEight = false;
+        var isCheckedNine = false;
+        var isCheckedTen = false;
+        //function for validating the radios
+        function surveyVal() {
+            var a = 0;
+            while (!isCheckedOne && a < questionOne.length) {
+                if (questionOne[a].checked) {
+                    isCheckedOne = true;
+                } else {
+                    a++
+                }
+            }
+            var b = 0
+            while (!isCheckedTwo && b < questionTwo.length) {
+                if (questionTwo[b].checked) {
+                    isCheckedTwo = true
+                } else {
+                    b++
+                }
 
+
+            }
+            var c = 0
+            while (!isCheckedThree && c < questionThree.length) {
+                if (questionThree[c].checked) {
+                    isCheckedThree = true
+                } else {
+                    c++
+                }
+            }
+            var d = 0
+            while(!isCheckedFour && d < questionFour.length){
+                if(questionFour[d].checked){
+                    isCheckedFour = true
+                } else {
+                    d++
+                }
+            }
+            var e = 0
+            while(!isCheckedFive && e < questionFive.length){
+                if(questionFive[e].checked){
+                    isCheckedFive = true
+                } else {
+                    e++
+                }
+            }
+            var f = 0
+            while(!isCheckedSix && f < questionSix.length){
+                if(questionSix[f].checked){
+                    isCheckedSix = true
+                } else {
+                    f++
+                }
+            }
+            var g = 0
+            while(!isCheckedSeven && g < questionSeven.length){
+                if(questionSeven[g].checked){
+                    isCheckedSeven = true
+                } else {
+                    g++
+                }
+            }
+            var h = 0
+            while(!isCheckedEight && h < questionEight.length){
+                if(questionEight[h].checked){
+                    isCheckedEight = true
+                } else {
+                    h++
+                }
+            }
+            var i = 0
+            while(!isCheckedNine && i < questionNine.length){
+                if(questionNine[i].checked){
+                    isCheckedNine = true
+                } else {
+                    i++
+                }
+            }
+            var j = 0
+            while(!isCheckedTen && j < questionTen.length){
+                if(questionTen[j].checked){
+                    isCheckedTen = true
+                } else {
+                    j++
+                }
+            }
+            if(isCheckedOne && isCheckedTwo && isCheckedThree && isCheckedFour && isCheckedFive && isCheckedSix && isCheckedSeven && isCheckedEight && isCheckedNine && isCheckedTen){
+                getAnswers()
+                resetRadios()
+            } else {
+                updateHtml()
+            }
+        }
+        // function for updating the html
+        function updateHtml(){
+            if (!isCheckedOne){
+                $("#checkOne").html("Please check an answer for this question")
+            }
+             if (!isCheckedTwo){
+                $("#checkTwo").html("Please check an answer for this question")
+            }
+             if (!isCheckedThree){
+                $("#checkThree").html("Please check an answer for this question")
+            } 
+             if(!isCheckedFour){
+                $("#checkFour").html("Please check an answer for this question")
+            }
+            if(!isCheckedFive){
+                $("#checkFive").html("Please check an answer for this question")
+            }
+            if(!isCheckedSix){
+                $("#checkSix").html("Please check an answer for this question")
+            }
+            if(!isCheckedSeven){
+                $("#checkSeven").html("Please check an answer for this question")
+            }
+            if (!isCheckedEight){
+                $("#checkEight").html("Please check an answer for this question")
+            }
+            if (!isCheckedNine){
+                $("#checkNine").html("Please check an answer for this question")
+            }
+            if (!isCheckedTen){
+                $("#checkTen").html("Please check an answer for this question")
+            }
+        }
+        // function for reseting the radios
+        function resetRadios() {
+
+            for (var i = 0; i < questionOne.length; i++) {
+                questionOne[i].checked = false;
+            };
+            for (var i = 0; i < questionTwo.length; i++) {
+                questionTwo[i].checked = false;
+            };
+            for (var i = 0; i < questionThree.length; i++) {
+                questionThree[i].checked = false;
+            };
+            for (var i = 0; i < questionFour.length; i++) {
+                questionFour[i].checked = false;
+            };
+            for (var i = 0; i < questionFive.length; i++) {
+                questionFive[i].checked = false;
+            };
+            for (var i = 0; i < questionSix.length; i++) {
+                questionSix[i].checked = false;
+            };
+            for (var i = 0; i < questionSeven.length; i++) {
+                questionSeven[i].checked = false;
+            };
+            for (var i = 0; i < questionEight.length; i++) {
+                questionEight[i].checked = false;
+            };
+            for (var i = 0; i < questionNine.length; i++) {
+                questionNine[i].checked = false;
+            };
+            for (var i = 0; i < questionTen.length; i++) {
+                questionTen[i].checked = false;
+            };
+        };
+        // function for getting the answer number form the radios
+        function getAnswers() {
+
+            for (var i = 0; i < questionOne.length; i++) {
+                if (questionOne[i].checked) {
+                    answerOne = i += 1
+                }
+            };
+            for (var i = 0; i < questionTwo.length; i++) {
+                if (questionTwo[i].checked) {
+                    answerTwo = i += 1
+                } 
+            };
+            for (var i = 0; i < questionThree.length; i++) {
+                if (questionThree[i].checked) {
+                    answerThree = i += 1
+                } 
+            };
+            for (var i = 0; i < questionFour.length; i++) {
+                if (questionFour[i].checked) {
+                    answerFour = i += 1
+                } 
+            };
+            for (var i = 0; i < questionFive.length; i++) {
+                if (questionFive[i].checked) {
+                    answerFive = i += 1
+                } 
+            };
+            for (var i = 0; i < questionSix.length; i++) {
+                if (questionSix[i].checked) {
+                    answerSix = i += 1
+                } 
+            };
+            for (var i = 0; i < questionSeven.length; i++) {
+                if (questionSeven[i].checked) {
+                    answerSeven = i += 1
+                } 
+            };
+            for (var i = 0; i < questionEight.length; i++) {
+                if (questionEight[i].checked) {
+                    answerEight = i += 1
+                } 
+            };
+            for (var i = 0; i < questionNine.length; i++) {
+                if (questionNine[i].checked) {
+                    answerNine = i += 1
+                } 
+            };
+            for (var i = 0; i < questionTen.length; i++) {
+                if (questionTen[i].checked) {
+                    answerTen = i += 1
+                }
+            };
+
+            profile = {
+                name: $("#name").val().trim(),
+                quote: $("#quote").val().trim(),
+                pic: $("#url").val().trim(),
+                answers: [
+                    answerOne,
+                    answerTwo,
+                    answerThree,
+                    answerFour,
+                    answerFive,
+                    answerSix,
+                    answerSeven,
+                    answerEight,
+                    answerNine,
+                    answerTen
+                ]
+            }
+        };
+        $("#surveySub").on("click", function (event) {
+            event.preventDefault()
+            surveyVal()
+        })
+    </script>
 </body>
 
 </html>
