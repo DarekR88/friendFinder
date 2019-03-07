@@ -2,7 +2,7 @@ var friendsList = [
     {
         name: "Kit T. Kat",
         quote: "I'm one cool cat!",
-        url: "images/Kit.jpg",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeADeg5Kpa2cE2ENW5haPOXRXf9zE3ssXUVl6iLfkP13-SSS-bTQ",
         answers: [
             5,
             5,
@@ -19,7 +19,7 @@ var friendsList = [
     {
         name: "Blue Falcon",
         quote: "I am the Blue Falcon.",
-        url: "images/falcon.jpg",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJWDUHgzRsKCKibJnNjOlqQDWAJTS5I9UJ1AcHk5leYZMxFKFiow",
         answers: [
             4,
             2,
@@ -36,7 +36,7 @@ var friendsList = [
     {
         name: "Scooby-Doo",
         quote: "Ret's get outta here!",
-        url: "images/scooby.jpg",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYUhnztONo4qJnp_Jyh6T3trHocSwpBHCJHSQcb6Ebgc9yUEhG4g",
         answers: [
             1,
             4,
@@ -53,7 +53,7 @@ var friendsList = [
     {
         name: "Shakira",
         quote: "Leyley lo ley lo ley!",
-        url: "images/shakira.jpg",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHoY8YRO9cAOItLhg-vQQLtMJq15wh19eimv_qHzHrqwCi8j7alg",
         answers: [
             3,
             1,
@@ -70,7 +70,7 @@ var friendsList = [
     {
         name: "Gabrielle Union",
         quote: "If there were a bacon-scented candle, that would be my dream.",
-        url: "images/union.jpg",
+        url: "https://i.imgur.com/a3ppbuvb.jpg",
         answers: [
             4,
             2,
