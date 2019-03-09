@@ -12,11 +12,11 @@ module.exports = function (app) {
         var matchArray = [];
         var match = 0;
         for (var i = 0; i < friendsData.length; i++) {
-            var diffInScore = 0;
+            var difference = 0;
             for (var b = 0; b < userAnswers.length; b++) {
-                diffInScore += (Math.abs(parseInt(friendsData[i].answers[b] - parseInt(userAnswers[b]))));
+                difference += (Math.abs(parseInt(friendsData[i].answers[b] - parseInt(userAnswers[b]))));
             }
-            matchArray.push(diffInScore);
+            matchArray.push(difference);
         }
         for (var i = 0; i < matchArray.length; i++) {
             if (matchArray[i] <= matchArray[match]) {
